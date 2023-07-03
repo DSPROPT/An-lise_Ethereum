@@ -1,3 +1,4 @@
+![image](https://github.com/Geek4ManiacsPT/An-lise_Ethereum/assets/123905090/a64a51ee-ea34-447c-85ab-23fd3cfffcfa)
 
 Olá a todos, bem-vindos ao nosso tutorial de hoje, onde vamos explorar o emocionante mundo da análise financeira utilizando Python. Hoje, vamos focar-nos no Ethereum, uma das criptomoedas mais populares, e vamos utilizar alguns conceitos estatísticos chave: o desvio padrão e a distribuição normal.
 
