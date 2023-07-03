@@ -1,0 +1,2 @@
+# An-lise_Ethereum
+Análise_Financeira_do_Ethereum_Usando_Python_Desvio_Padrão_e_Distribuição_Normal 
