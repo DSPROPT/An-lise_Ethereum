@@ -15,35 +15,50 @@ Primeiro, precisamos de obter os dados do Ethereum.
 
 
 # Importamos as bibliotecas necessárias
+
 import yfinance as yf
+
 import numpy as np
+
 from scipy.stats import norm
 
 # Baixamos os dados do Ethereum
+
 eth_data = yf.download('ETH-USD', start='2020-01-01', end='2023-12-31')
+
 Depois, podemos calcular o desvio padrão destes dados.
 
 
 # Calculamos o desvio padrão dos preços de fecho
+
 eth_std = np.std(eth_data['Close'])
+
 print('Desvio padrão dos preços de fecho do Ethereum: ', eth_std)
+
 Além disso, podemos ajustar os nossos dados a uma distribuição normal.
 
 
 # Ajustamos os dados a uma distribuição normal
+
 mu, std = norm.fit(eth_data['Close'])
+
 print('Média: ', mu)
+
 print('Desvio padrão: ', std)
+
 Por fim, podemos gerar uma distribuição normal a partir dos nossos dados e visualizá-la.
 
 
 import matplotlib.pyplot as plt
 
 # Geramos uma distribuição normal
+
 data_normal = np.random.normal(mu, std, 10000)
 
 # Criamos um histograma para visualizar a distribuição
+
 plt.hist(data_normal, bins=30, density=True, alpha=0.6, color='g')
+
 plt.show()
 
 
